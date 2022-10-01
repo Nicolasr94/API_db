@@ -1,5 +1,4 @@
 const {Sequelize} = require('sequelize');
-
 const sequelize = new Sequelize('Bd_instagrom', 'root', null,{
     host: 'localhost',
     dialect: 'mysql'
@@ -12,5 +11,5 @@ const sequelize = new Sequelize('Bd_instagrom', 'root', null,{
   } catch (error) {
     console.error('Unable to connect to the database:', error);
   }
-}
+};
 connection();
